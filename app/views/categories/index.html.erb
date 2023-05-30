@@ -3,6 +3,9 @@
   <%@category.each do |e|%>
     <div class="each">
       <div class="dee">
+        <div class='img'>
+          <%= image_tag e.icon %>
+        </div>
         <%= link_to e.name, category_path(e.id) %>
       </div>
       <div class="cash">
