@@ -1,0 +1,16 @@
+<div class = "welcome">
+  <div class = "welcome_content">
+    <div class='blur'>
+      <h1><span class='green'>Hello!</span> welcome to</h1>
+      <p>Splash budget<p>
+    </div>
+    <div class="index">
+        <%if user_signed_in?%>
+          <%= link_to "resume", categories_path %>
+        <%else%>
+          <%= link_to "Sign in", categories_path %>
+        <%end%>
+        <%= link_to "Sign up",  new_user_registration_path %>
+    </div>
+  </div>
+</div>
