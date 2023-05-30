@@ -8,7 +8,10 @@
   </div>
   <div class="input">
     <%= form.label :icon %>
-    <%= form.file_field :icon %>
+    <%= form.file_field :icon, id: 'image-input' %>
+  </div>
+  <div class="img">
+    <img id="image-preview" src="#" alt="Preview Image" style="display: none;">
   </div>
   <div class="actions cate">
    <%= form.submit placeholder: "create category"%>
