@@ -7,13 +7,6 @@
 # Ignore bundler config.
 /.bundle
 
-Gemfile
-Gemfile.lock
-package.json
-package-lock.json
-Rakefile
-vendor
-bin
 node_modules
 .env
 # Ignore all logfiles and tempfiles.
