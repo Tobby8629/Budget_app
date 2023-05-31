@@ -1,0 +1,17 @@
+<div class='sign'>
+  <div class='rh'>
+    <%if user_signed_in?%>
+      <%= button_to "sign out", destroy_user_session_path, method: :delete%>
+    <%else%>
+      <%= link_to  "sign in", new_user_session %>
+    <%end%>
+  </div>
+
+  <div class=total>
+    <p><%=total%></p>
+  </div>
+
+  <div class='lh'>
+    <%= link_to "<", model %>
+  </div>
+</div>
