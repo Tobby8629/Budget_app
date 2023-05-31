@@ -52,58 +52,66 @@
 
 - [Exchange_BudgetApp Link](https://exchange-budget.onrender.com)
 
-## 💻 Getting Started <a name="getting-started"></a>
+## Getting Started
 
-To run this project, take a copy of the code and follow the instruction below.
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+> You need the following tools be installed in your computer:
+
+> - [Rails](https://guides.rubyonrails.org/)
+> - [Git](https://www.linode.com/docs/guides/how-to-install-git-on-linux-mac-and-windows/)
+> - [Ruby](https://github.com/microverseinc/curriculum-ruby/blob/main/simple-ruby/articles/ruby_installation_instructions.md)
+> - IDE
+> - Etc
 
 ### Setup
 
-`Clone the project`
+Clone this repository to your desired folder:
 
-Install gems with:
-
-```
-bundle install
-```
-
-Setup database with:
+```sh
+  cd my-prefered-folder
+  
+  git clone https://github.com/Tobby8629/Budget_app
 
 ```
+
+### Install
+
+Install this project with:
+
+```sh
+  cd blog-app
+  
+  bundle install
+```
+
+### 💾 Database
+
+Create the databases and run migrations with:
+
+```sh
 rails db:create
 rails db:migrate
 ```
 
 ### Usage
 
-Start server with:
+To run the project, execute the following command:
 
+```sh
+  rails server or rails s
 ```
-rails server
-```
-
-Visit http://localhost:3000/ in your browser.
 
 ### Run tests
 
-Install npm with:
+To run tests, run the following command:
 
-Install rspec with:
 
-```
-bundle install
-```
-
-and
-
-```
-rails generate rspec:install
-```
-
-run the test with:
-
-```
-rspec spec
-```
+```sh
+  rspec spec/
+````
 
 ### Usage
 
