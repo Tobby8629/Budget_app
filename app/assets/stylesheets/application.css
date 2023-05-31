@@ -150,11 +150,11 @@ a {
 .dee {
   display: flex;
   align-items: center;
-  width: 50%;
+  width: 60%;
 }
 
 .img {
-  width: 40%;
+  width: 50%;
   height: 100%;
   margin-right: 10px;
   border-radius: 50%;
@@ -246,6 +246,10 @@ a {
 
 .rh button {
   padding: 5px 10px;
+  background-color:transparent;
+  outline: none;
+  border: 1px solid white;
+  color: white;
 }
 
 .total p {
@@ -258,6 +262,7 @@ a {
 .inn {
   background-color: #eae7e7;
   height: 100vh;
+  overflow-y: scroll;
 }
 
 .add {
@@ -282,6 +287,7 @@ a {
 
 .cash {
   text-align: center;
+  width: 35%;
 }
 
 .cash button {
