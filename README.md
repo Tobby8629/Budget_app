@@ -19,7 +19,7 @@
 
 # 📖 Exchange BudgetApp <a name="about-project"></a>
 
-> The budget app is designed to help users manage their finances effectively. It provides features such as user authentication, category creation for budgeting purposes, and the ability to add transactions to track expenses and income. Here is a brief video describing the project [Here](https://www.loom.com/share/dd776c8c17a84c00a6ad7cae8db4e0c5).
+> The budget app is designed to help users manage their finances effectively. It provides features such as user authentication, category creation for budgeting purposes, and the ability to add transactions to track expenses and income. Here is a brief video describing the project [Here](https://www.loom.com/share/f439a40081fd49f7aca936b89df6e743).
 
 ## Built With <a name="built-with"></a>
 
