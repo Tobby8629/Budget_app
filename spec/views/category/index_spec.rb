@@ -13,7 +13,6 @@ RSpec.describe Category, type: :system do
       @catetwo.icon.attach(file)
       @cateex = CategoryExchange.create(category_id: @cate.id, exchange_id: @transaction.id)
 
-
       visit categories_path
       fill_in 'Email', with: @user.email
       fill_in 'Password', with: @user.password
@@ -49,7 +48,6 @@ RSpec.describe Category, type: :system do
       total = @cate.exchanges.sum(:amount)
       expect(page).to have_content("$#{total}")
     end
-
 
     it 'display all categorie' do
       categories = Category.all

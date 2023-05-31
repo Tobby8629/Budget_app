@@ -47,7 +47,6 @@ RSpec.describe Category, type: :system do
       expect(page).to have_content("$#{total}")
     end
 
-
     it 'display all categorie' do
       categories = @cate.exchanges
       categories.each do |e|
