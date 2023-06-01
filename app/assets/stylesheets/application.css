@@ -31,38 +31,28 @@ a {
 }
 
 .welcome {
-  background-image: linear-gradient(rgba(17, 17, 17, 0.658), rgba(20, 20, 20, 0.478)), url(bg.jpg);
+  background: #fff;
   height: 100vh;
   background-position: center;
   background-size: cover;
   position: relative;
 }
 
-.welcome_content {
-  width: 90%;
+.welcome_content h1 {
+  text-align: center;
+}
+
+.welcome p {
+  color: #434b54;
+  font-size: 40px;
+  font-weight: 300;
+  font-family: 'Lobster Two', cursive;
   position: absolute;
-  top: 50%;
+  text-align: center;
+  top: 40%;
+  width: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.blur {
-  backdrop-filter: blur(15px);
-  padding: 20px 10px;
-  animation: bounce 5s linear infinite;
-}
-
-.welcome_content h1 {
-  color: #ffff;
-  text-align: center;
-}
-
-.welcome_content p {
-  color: #ffff;
-  font-size: 40px;
-  font-weight: 100;
-  font-family: 'Lobster Two', cursive;
-  text-align: center;
 }
 
 .green {
@@ -80,10 +70,12 @@ a {
 
 .index {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  margin: 1rem auto;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  bottom: 13px;
 }
 
 .lh a {
@@ -93,11 +85,10 @@ a {
 }
 
 .index a {
-  color: #ffff;
-  border: 2px solid gray;
   border-radius: 5px;
-  padding: 10px 20px;
-  margin-left: 10px;
+  width: 95%;
+  margin: 10px auto;
+  padding: 10px 0;
   text-align: center;
   font-size: 23px;
   letter-spacing: 0.01rem;
@@ -112,39 +103,15 @@ a {
   text-transform: capitalize;
 }
 
-.index a:hover {
-  background-color: rgb(84, 180, 240);
+.index a:focus {
+  background-color: #3778c2;
+  color: #fff;
+  border: none;
+  outline: none;
 }
 
-@keyframes bounce {
-  10% {
-    transform: translateY(-10px);
-    border-color: rgb(143, 185, 218);
-  }
-
-  30% {
-    transform: translateY(0);
-    border-color: rgb(130, 189, 233);
-  }
-
-  50% {
-    transform: translateY(-10px);
-    border-color: rgb(84, 180, 240);
-  }
-
-  70% {
-    transform: translateY(0);
-    border-color: rgb(26, 156, 255);
-  }
-
-  90% {
-    transform: translateY(-10px);
-    border-color: rgb(15, 95, 156);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
+.index a:hover {
+  background-color: rgb(84, 180, 240);
 }
 
 .dee {
@@ -154,14 +121,13 @@ a {
 }
 
 .img {
-  width: 50%;
-  height: 100%;
   margin-right: 10px;
-  border-radius: 50%;
 }
 
 .img img {
-  width: 100%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
 }
 
 /***************** forms ******************/
@@ -199,6 +165,14 @@ a {
   background-color: rgba(185, 225, 255, 0.637);
 }
 
+.input select {
+  padding: 10px;
+  font-size: 18px;
+  outline: none;
+  width: 100%;
+  margin: 5px 0;
+}
+
 .actions {
   width: 40%;
   padding: 10px 0;
@@ -206,7 +180,7 @@ a {
 
 .actions input {
   width: 100%;
-  padding: 10px;
+  padding: 8px;
   outline: none;
   font-size: 20px;
   border: none;
@@ -263,6 +237,7 @@ a {
   background-color: #eae7e7;
   height: 100vh;
   overflow-y: scroll;
+  margin-bottom: 2rem;
 }
 
 .add {
@@ -295,7 +270,7 @@ a {
   border: none;
   outline: none;
   color: rgb(252, 63, 63);
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
 }
 

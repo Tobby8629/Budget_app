@@ -56,7 +56,7 @@ RSpec.describe Category, type: :system do
 
     it 'should log user out of the app' do
       click_on 'sign out'
-      expect(page).to have_content('Hello! welcome')
+      expect(page).to have_content('Exchange budget')
     end
   end
 end

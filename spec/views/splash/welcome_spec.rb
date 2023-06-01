@@ -6,10 +6,6 @@ RSpec.describe Category, type: :system do
       visit root_path
     end
 
-    it 'display hello' do
-      expect(page).to have_content 'Hello!'
-    end
-
     it 'display app name' do
       expect(page).to have_content 'Exchange budget'
     end
