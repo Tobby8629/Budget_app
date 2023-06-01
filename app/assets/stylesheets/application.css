@@ -168,6 +168,8 @@ a {
 .input select {
   padding: 10px;
   font-size: 18px;
+  border: 1px solid #434b54;
+  background-color: transparent;
   outline: none;
   width: 100%;
   margin: 5px 0;
