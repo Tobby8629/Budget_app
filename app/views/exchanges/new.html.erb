@@ -1,0 +1,21 @@
+<%= render partial: "shared/sign",locals:{model: category_path(@cate.id), total: "new transaction"}%>
+
+<div class = "form up">
+<%=form_with model:@transaction, url: category_exchanges_path(@cate.id,cat_id: @cate.id) do |f|%>
+  <h2 class="exc"> create Transaction</h2>
+  <div class="input">
+    <%=f.label :name%>
+    <%=f.text_field :name, placeholder: "transaction name", required:true %>
+  </div>
+  <div class="input">
+    <%=f.label :amount%>
+    <%=f.text_field :amount, placeholder: "amount", required:true %>
+  </div>
+   <div class="input">
+    <%= f.select :category, options_for_select(@all.map { |e| [e.name, e.name] }) %>
+  </div>
+  <div class="actions ex">
+    <%=f.submit "create transaction", disable_with: 'create transactioning...'%>
+  </div>
+<%end%>
+</div>

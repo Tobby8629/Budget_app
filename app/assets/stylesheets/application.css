@@ -13,3 +13,275 @@
  *= require_tree .
  *= require_self
  */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&family=Barlow:wght@200;300;400;500&family=Lobster+Two:ital@1&family=Manrope:wght@200;300;400;500;600;700&family=Pacifico&family=Poppins:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px 0;
+  color: #434b54;
+}
+
+.welcome {
+  background: #fff;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.welcome_content h1 {
+  text-align: center;
+}
+
+.welcome p {
+  color: #434b54;
+  font-size: 40px;
+  font-weight: 300;
+  font-family: 'Lobster Two', cursive;
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.green {
+  color: rgb(152 193 196);
+}
+
+.sign {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  background-color: #3778c2;
+  padding: 0.3rem 1rem;
+}
+
+.index {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  bottom: 13px;
+}
+
+.lh a {
+  font-size: 40px;
+  color: #fff;
+  padding: 5px;
+}
+
+.index a {
+  border-radius: 5px;
+  width: 95%;
+  margin: 10px auto;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 23px;
+  letter-spacing: 0.01rem;
+  transition: 0.3s;
+}
+
+.add a {
+  color: #fff;
+}
+
+.each a {
+  text-transform: capitalize;
+}
+
+.index a:focus {
+  background-color: #3778c2;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+.index a:hover {
+  background-color: rgb(84, 180, 240);
+}
+
+.dee {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+
+.img {
+  margin-right: 10px;
+}
+
+.img img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+/***************** forms ******************/
+.form {
+  padding: 0 1rem;
+  margin: 3rem 0;
+}
+
+.form h2 {
+  text-align: center;
+  font-size: 32px;
+}
+
+.form form {
+  margin-top: 3rem;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input label {
+  font-size: 20px;
+}
+
+.input input {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background-color: rgba(185, 225, 255, 0.637);
+}
+
+.input select {
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #434b54;
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.actions {
+  width: 40%;
+  padding: 10px 0;
+}
+
+.actions input {
+  width: 100%;
+  padding: 8px;
+  outline: none;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(55, 235, 255);
+  color: aliceblue;
+}
+
+.log p {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.up {
+  margin-top: 1rem;
+}
+
+.up form {
+  margin: 1rem 0;
+}
+
+.cate input {
+  width: fit-content;
+  background-color: #5fb523;
+}
+
+.ex input {
+  width: fit-content;
+  background-color: #3778c2;
+}
+
+.up .form .input input {
+  background-color: rgb(130, 189, 233);
+}
+
+/*******************  navbar & Homepage ****************/
+
+.rh button {
+  padding: 5px 10px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid white;
+  color: white;
+}
+
+.total p {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 19px;
+}
+
+.inn {
+  background-color: #eae7e7;
+  height: 100vh;
+  overflow-y: scroll;
+  margin-bottom: 2rem;
+}
+
+.add {
+  background-color: #5fb523;
+  text-align: center;
+  padding: 15px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.each {
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cash {
+  text-align: center;
+  width: 35%;
+}
+
+.cash button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: rgb(252, 63, 63);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.cash p {
+  padding: 5px 0;
+}
+
+.form .exc {
+  font-size: 25px;
+  margin: 10px 0;
+  text-align: left;
+}

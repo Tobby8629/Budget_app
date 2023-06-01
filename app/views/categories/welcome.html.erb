@@ -1,0 +1,11 @@
+<div class = "welcome">
+      <p>Exchange budget<p>
+    <div class="index">
+        <%if user_signed_in?%>
+          <%= link_to "resume", categories_path, autofocus: true %>
+        <%else%>
+          <%= link_to "Sign in", categories_path, autofocus: true %>
+        <%end%>
+        <%= link_to "Sign up",  new_user_registration_path %>
+    </div>
+</div>
